@@ -27,5 +27,5 @@
 // console.log(`I'm ${prenom} ${age} years old`);
 
 var changed= "Bonjour"
-changed = changed.replace("o","a","a","a","a");
+changed = changed.replace(/o/g,"a");
 console.log(changed);
