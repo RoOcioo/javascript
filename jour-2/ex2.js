@@ -1,3 +1,3 @@
 var basic= 34;
-var stringfried= basic.toString();
-console.log(basic.length);
+var stringified= basic.toString();
+console.log(stringified);
