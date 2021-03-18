@@ -1,18 +1,8 @@
 var test = 143;
 var bis = 219;
 
-if (test > bis) {
-   console.log("hola");
+   console.log("> :", test > bis);
 
-} else {
-    console.log("chau");
-}
+   console.log("< :", test < bis);
 
-
-if (bis === 20) {
-    console.log("Bye"); 
-} else if (test < bis) {
-    console.log("Coucou");
-} else {
-    console.log("Bonjour");
-}
+   console.log(">= :", test >= bis); 

@@ -1,7 +1,11 @@
 var total= 0;
 var limit= 10;
+var i= 0;
 
-while (total < limit) {
-    total++;
-    console.log(total);
-}
+while (i <= limit) {
+    
+    total= total+i;
+    i++;
+    
+} 
+console.log(total);
