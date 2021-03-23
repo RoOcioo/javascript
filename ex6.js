@@ -26,19 +26,19 @@ var cakes =
 		status: "available"
 	},
 ]
-var cakesSoldOut = cakes.map(function(elem) {
+var cakesSoldOut = cakes.map( function (elem) {
     if (elem.flavor === "chocolate") {
-         elem.status= "Sold out ! "
+         elem.status= "Sold Out ! "
     } 
     return elem;
 });
 
-console.log(cakesSoldOut);
+
 
 var cakesSold = cakesSoldOut.filter(
     function (elem) {
-        if (elem.status === "Sold Out!") {
-            return elem;
+        
+            return elem.status === "Sold Out ! ";
             }    
-        });
+        );
 console.log(cakesSold);
