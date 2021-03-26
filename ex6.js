@@ -26,7 +26,7 @@ var cakes =
 		status: "available"
 	},
 ]
-var cakesSoldOut = cakes.map( function (elem) {
+var cakesSoldOut = cakes.filter( function (elem) {
     if (elem.flavor === "chocolate") {
          elem.status= "Sold Out ! "
     } 
@@ -35,7 +35,7 @@ var cakesSoldOut = cakes.map( function (elem) {
 
 
 
-var cakesSold = cakesSoldOut.filter(
+var cakesSold = cakesSoldOut.map(
     function (elem) {
         
             return elem.status === "Sold Out ! ";
